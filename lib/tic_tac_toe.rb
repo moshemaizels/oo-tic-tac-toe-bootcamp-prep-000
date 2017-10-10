@@ -109,7 +109,7 @@ class TicTacToe
       return nil
     end
   end
-  def play(board)
+  def play
     until over?(board) do
       turn(board)
     end
@@ -117,7 +117,7 @@ class TicTacToe
       puts "Congratulations #{winner(board)}!"
     else
       puts "Cat's Game!"
-    end 
+    end
   end
 
 end

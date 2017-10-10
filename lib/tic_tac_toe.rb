@@ -96,7 +96,7 @@ class TicTacToe
       return false
     end
   end
-  
+
   def winner
     if won?()
       winningBoard = won?()
@@ -116,7 +116,7 @@ class TicTacToe
       turn()
     end
     if won?()
-      puts "Congratulations #{winner(@board)}!"
+      puts "Congratulations #{winner()}!"
     else
       puts "Cat's Game!"
     end

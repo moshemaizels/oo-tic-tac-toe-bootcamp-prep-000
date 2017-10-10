@@ -100,7 +100,7 @@ class TicTacToe
     if won?()
       winningBoard = won?()
       #puts("winning board is #{winningBoard}")
-      if board[winningBoard[0]] == "X"
+      if @board[winningBoard[0]] == "X"
         return "X"
       else
         return "O"

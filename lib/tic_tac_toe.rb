@@ -113,7 +113,7 @@ class TicTacToe
     until over?() do
       turn()
     end
-    if won?(board)
+    if won?()
       puts "Congratulations #{winner(board)}!"
     else
       puts "Cat's Game!"

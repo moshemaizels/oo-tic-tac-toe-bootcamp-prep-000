@@ -81,4 +81,12 @@ class TicTacToe
       section == "X" || section == "O"
     end
   end
+  def draw?(board)
+    if full?(board)
+      if won?(board) == false
+        return true
+      end
+    end
+    return false
+  end
 end

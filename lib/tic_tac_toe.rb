@@ -96,4 +96,17 @@ class TicTacToe
       return false
     end
   end
+  def winner(board)
+    if won?(board)
+      winningBoard = won?(board)
+      #puts("winning board is #{winningBoard}")
+      if board[winningBoard[0]] == "X"
+        return "X"
+      else
+        return "O"
+      end
+    else
+      return nil
+    end
+  end
 end
